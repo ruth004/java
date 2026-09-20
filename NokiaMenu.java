@@ -1,15 +1,15 @@
 import java.util.Scanner;
 
 public class NokiaMenu{
-  public static void main( String[] args){
+  public static void main(String[] args){
     Scanner input = new Scanner(System.in);
 
     int currentMenu = 0;
+    int nestedMenu = 9;
     int selectedOption;
     boolean appIsStillRunning = true;
     
     while(appIsStillRunning){
-      System.out.println();
       
       switch (currentMenu){
         case 0:
@@ -38,6 +38,23 @@ public class NokiaMenu{
           System.out.println("7.Assign Tone");
           System.out.println("8.Send B'Card");
           System.out.println("9.Options");
+          
+          selectedOption = input.nextInt();
+              switch(selectedOption){
+                  case 9: 
+                    System.out.println("\t 1.Memory in use");
+                    System.out.println("\t 2.Type of view");
+                    System.out.println("\t 3.Memory status");
+                    System.out.println("\t 99 Main Menu");
+                    break;
+                  case 99:
+                    currentMenu = 0; 
+                    break;
+                  case -1:
+                    appIsStillRunning = false;
+                    break;
+              }
+              
           System.out.println("0. Back");
           System.out.println("99 Main Menu");
           System.out.println("-1. Exit");
