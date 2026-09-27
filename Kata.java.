@@ -1,0 +1,103 @@
+	public class Kata{
+	
+	public static int maxmium(int a,int b ){
+	if( a < b){
+	return b;
+	} 
+	return a;	
+	}
+	
+	public static boolean isEven(int number){
+	if(number %2 ==0){
+	return true;
+	}
+	
+	return false;
+	
+	}
+	
+	public static boolean isPrimeNumber(int number){
+
+	for(int counter = 2; counter < number; counter++){
+		if(number % counter == 0){
+			return false;
+		} else {
+		return true;
+		}
+		
+		}
+		
+		}
+		
+	public static Subtract(int a,int b){
+	if( a<b){
+		return b-a;
+		}
+		return a-b;
+		}
+		
+	public static float divide(int a, int b){
+		if( b=0){
+		return 0;
+	}
+		return a/b;
+	}
+	
+	public static int factorOf(int number){
+		int count = 0;
+		for(int number =1;index<=number; number++){
+		if(index% number == 0) count++;
+		}
+		return count;
+	
+	}
+	
+	
+	public static boolean isperfectsquare(int number){
+	for(int count = 1; count*count <=number; count++){
+	if(count*count == number){
+	
+	return true;
+	}
+	return false;
+	}
+	
+	
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	public static boolean isPalindrome(int number){
+	int original = number;
+	int reversed = 0;
+	while(number>0){
+	int digit = number % 10;
+	reverse = reversed *10 + digit;
+	number = number / 10;
+	}
+	return original == reversed;
+	
+	}
+	
+	
+	public static long factorialof(int number){
+	long result = 1;
+	for(int count = 1 count<=; count++){
+	result = result *count;
+	
+	}
+	return result;
+	}
+	
+	}
+	
+
+	 
+	 
+	
+	
